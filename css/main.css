@@ -1,0 +1,150 @@
+* {
+    color: rgba(29,29,29,.7)
+}
+
+body {
+	height: 100%;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(243, 243, 243);
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Rubik';
+    font-weight: 300;
+    letter-spacing: .2em;
+    text-transform: none;
+}
+
+header, section, footer {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 75px;
+}
+
+h3 {
+    color: #6e6c6c;
+}
+
+hr {
+    margin: 100px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+button.main_button {
+    letter-spacing: .43em;
+    font-weight: bold;
+    border: 2px solid #9b9797;
+    padding: 20px;
+    margin: 20px 50px;
+}
+
+button.main_button:hover {
+    color: white;
+    background-color: #9b9797;
+    border: 2px solid #797676;
+}
+
+#branding_logo {
+    color: #990000;
+    font-size: 5em;
+    padding-bottom: 50px;
+    background-color: rgb(243, 243, 243);
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: 400;
+    font-variant: small-caps;
+    text-transform: capitalize;
+}
+
+#about {
+    padding-top: 5%;
+}
+
+.quote_right {
+    text-align: right;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+.quote_left {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+.quote_middle {
+    padding-bottom: 50px;
+    text-transform: uppercase;
+    font-size: .8em;
+    background-color: rgb(243, 243, 243);
+}
+
+.status_container_row {
+    width: 100%;
+    margin: 5% 0;
+}
+
+.status_container_image_col {
+    width: 20%;
+    display: inline-block;
+}
+
+.status_container_status_col {
+    width: 60%;
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+    margin: 2% 5%;
+}
+
+.three_image_container {
+    display: inline-block;
+    width: 100%;
+}
+
+.three_image_column {
+    display: inline-block;
+    width: 30%;
+}
+
+#main_image {
+    position: fixed;
+    top: 0;
+    width: 90%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+#main_body {
+    margin-top: 25%;
+    background-color: inherit;
+}
+
+/* @media only screen and (max-width: 600px) {
+    #branding_logo {
+        font-size: 3em;
+        display: inline-block;
+    }
+
+    #header_nav_mobile {
+        display: inline-block;
+    }
+
+    .nav_link {
+        display: none;
+    }
+
+    .quote_middle {
+        margin-top: -20%;
+    }
+
+    #main_image {
+        margin-top: 30%;
+    }
+} */
