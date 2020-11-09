@@ -3,27 +3,34 @@
     <head>
         <title>Liquors</title>
         <link rel="stylesheet" href="css/main.css"/>
+        <script src="scripts/main.js"> </script>
     </head>
-    <body>
+    <body onload="runOnStart()">
         <header>
-            <div id="branding_logo">
+            <div id="branding_logo" class="navigational_elements">
                 Sagar Ghimire
             </div>
             <div class="quote_middle">
-                <br>
+                <br> Inspiration hits me before bed.
             </div>
         </header>
         <section id="main_image">
             <img src="images/image_top.jpeg" alt=""/>
         </section>
         <section id="main_body">
-            <section id="about">
+            <section id="about" class="navigational_elements">
                 <h3>
                     Who am I?
                 </h3>
-                I am Sagar.
+                <div>
+                    <img src="images/image_top.jpeg" alt="who am i?" id="about_me_pic" />
+                    <br><br>
+                    <div>
+                        Yo! That's me. &#9757;
+                    </div>
+                </div>
             </section>
-            <section>
+            <section id="status" class="navigational_elements">
                 <h3>
                     What am I up to?
                 </h3>
@@ -61,7 +68,7 @@
             <section class="quote_right">
                 "Feel the fear and do it anyway." <br> <i>Susan Jeffers</i>
             </section>
-            <section>
+            <section id="career" class="navigational_elements">
                 <h3>
                     My Career Highlights
                 </h3>
@@ -109,7 +116,7 @@
             <section class="quote_left">
                 "First do it, then do it right, then do it better." <br> <i>Addy Osmani</i>
             </section>
-            <section>
+            <section id="education" class="navigational_elements">
                 <h3>
                     My Education Highlights
                 </h3>
@@ -134,7 +141,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="believe" class="navigational_elements">
                 <h3>
                     Things I believe in
                 </h3>
@@ -165,12 +172,12 @@
                 "Feel the fear and do it anyway." <br> <i>Susan Jeffers</i>
             </section>
             <section>
-                <button class="main_button">ABOUT</button>
+                <button class="main_button" onclick="scrollInto('about')">ABOUT</button>
                 <button class="main_button">CONTACT</button>
             </section>
             <footer>
                 <hr>
-                <div>
+                <div id="contact" class="navigational_elements">
                     Know more about me!
                 </div>
                 <hr>
@@ -179,6 +186,11 @@
                 </div>
             </footer>
         </section>
-        <script src="scripts/main.js"> </script>
+        <div id="navigation_arrow_up" onclick="view_up()">
+            <span class="arrow up"></span>
+        </div>
+        <div id="navigation_arrow_down" onclick="view_down()">
+            <span class="arrow down"></span>
+        </div>
     </body>
 </html>
