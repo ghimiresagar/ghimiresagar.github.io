@@ -17,7 +17,7 @@ body {
 header, section, footer {
     width: 100%;
     text-align: center;
-    padding-bottom: 75px;
+    padding-bottom: 50px;
 }
 
 h3 {
@@ -35,6 +35,10 @@ img {
 
 button {
     cursor: pointer;
+}
+
+a {
+    text-decoration: none;
 }
 
 button.main_button {
@@ -87,7 +91,7 @@ button.main_button:hover {
 
 .status_container_row {
     width: 100%;
-    margin: 5% 0;
+    margin: 50px 0;
 }
 
 .status_container_image_col {
