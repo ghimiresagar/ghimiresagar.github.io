@@ -136,7 +136,7 @@ button.main_button:hover {
 
 #navigation_arrow_up {
     position: fixed;
-    width: 5%;
+    width: 30px;
     height: 5%;
     text-align: center;
     border: 1px bold black;
@@ -146,13 +146,13 @@ button.main_button:hover {
     font-size: 2em;
     background-color: #cfdef3;
     bottom: 11%;
-    right: 0;
+    right: 1%;
     cursor: pointer;
 }
 
 #navigation_arrow_down {
     position: fixed;
-    width: 5%;
+    width: 30px;
     height: 5%;
     text-align: center;
     border: 1px bold black;
@@ -162,7 +162,7 @@ button.main_button:hover {
     font-size: 2em;
     background-color: #cfdef3;
     bottom: 5%;
-    right: 0;
+    right: 1%;
     cursor: pointer;
 }
 
