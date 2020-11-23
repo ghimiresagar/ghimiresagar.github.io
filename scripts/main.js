@@ -17,11 +17,10 @@ function view_up() {
         // get the elements view, returns values as an object
         let elementBound = element.getBoundingClientRect();
         if (
-            elementBound.top >= 0 &&
             elementBound.bottom <= (window.innerHeight || document.documentElement.clientHeight)
         ) {
             // the id is in the view port, we want the next element as the pointer
-            // check if it's not the last element
+            // check if it's not the first element
             if (i != 0) {
                 pointer = document.getElementById(navigational_ids[i-1]);
                 // scroll into that element
@@ -41,8 +40,7 @@ function view_down() {
         // get the elements view, returns values as an object
         let elementBound = element.getBoundingClientRect();
         if (
-            elementBound.top >= 0 &&
-            elementBound.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+            elementBound.top >= 0 
         ) {
             // the id is in the view port, we want the next element as the pointer
             // check if it's not the last element
