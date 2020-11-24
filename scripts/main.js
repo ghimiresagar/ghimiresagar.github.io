@@ -63,4 +63,11 @@ function runOnStart() {
     for (let i = 0; i < 7; i++) {
         navigational_ids.push(navigational_elements[i].id);
     }
+
+    ///////////////////////////////////////////////////////////////
+    // this is to preview the main image to the size of the window
+    ///////////////////////////////////////////////////////////////
+    // get the width and 
+    let main_image = document.getElementById("main_image");
+
 }

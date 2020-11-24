@@ -141,38 +141,42 @@ button.main_button:hover {
 #navigation_arrow_up {
     position: fixed;
     width: 30px;
-    height: 5%;
+    height: 30px;
     text-align: center;
     border: 1px bold black;
     border-radius: 15%;
     z-index: 2;
     font-weight: bold;
     font-size: 2em;
-    background-color: #cfdef3;
-    bottom: 11%;
-    right: 1%;
+    background-color: black;
+    bottom: 70px;
+    right: 20px;
     cursor: pointer;
 }
 
 #navigation_arrow_down {
     position: fixed;
     width: 30px;
-    height: 5%;
+    height: 30px;
     text-align: center;
     border: 1px bold black;
     border-radius: 15%;
     z-index: 2;
     font-weight: bold;
     font-size: 2em;
-    background-color: #cfdef3;
-    bottom: 5%;
-    right: 1%;
+    background-color: black;
+    bottom: 30px;
+    right: 20px;
     cursor: pointer;
 }
 
+#navigation_arrow_up:hover, #navigation_arrow_down:hover {
+    background-color: rgb(78, 75, 75);
+}
+
 .arrow {
-    border: solid black;
-    border-width: 0 3px 3px 0;
+    border: solid white;
+    border-width: 0 4px 4px 0;
     display: inline-block;
     padding: 3px;
 }
@@ -180,11 +184,13 @@ button.main_button:hover {
 .up {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
+    margin-bottom: 25%;
 }
 
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+    margin-bottom: 35%;
 }
 /* @media only screen and (max-width: 600px) {
     #branding_logo {
