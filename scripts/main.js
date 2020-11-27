@@ -57,6 +57,7 @@ function view_down() {
 
 // function to run on load of the web page 
 function runOnStart() {
+    // code to get the navigational elements
     // get all the element's id that will be used for navigation
     let navigational_elements = document.getElementsByClassName("navigational_elements");
     // loop through the navigational elements to get their ids
@@ -64,10 +65,27 @@ function runOnStart() {
         navigational_ids.push(navigational_elements[i].id);
     }
 
-    ///////////////////////////////////////////////////////////////
-    // this is to preview the main image to the size of the window
-    ///////////////////////////////////////////////////////////////
-    // get the width and 
-    let main_image = document.getElementById("main_image");
-
+    // code for intersection observer
+    let elementsList = document.getElementsByClassName("intersection_observer");
+    let options = {
+        threshold: .3
+    }
+    // create an object of intersection observer to run a fadein animation whenever an element is in view
+    let observer = new IntersectionObserver(
+        // entries is a list of elements that we are observing
+        entries => {
+            // loop through all the entries to set the fadein animation
+            entries.forEach(entry => {
+                // check if the element is in the viewport
+                if (entry.isIntersecting) {
+                    entry.target.animate([{opacity: 1}], {duration: 1000, fill: "forwards"});
+                } else {
+                    entry.target.animate([{opacity: 0}], {duration: 500, fill: "forwards"});
+                }
+            })
+        },
+        options
+    )
+    // use classlist html collection as an array
+    Array.from(elementsList).forEach(e => observer.observe(e));
 }
